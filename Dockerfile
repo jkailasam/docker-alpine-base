@@ -10,6 +10,7 @@ ARG OVERLAY_ARCH="amd64"
 # environment variables
 ENV PS1="$(whoami)@$(hostname):$(pwd)$ " \
 HOME="/root" \
+S6_KILL_GRACETIME="10000" \
 TERM="xterm"
 
 # install packages
