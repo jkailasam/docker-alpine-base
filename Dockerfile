@@ -1,10 +1,9 @@
-FROM scratch
-ADD rootfs.tar.xz /
+FROM alpine
 
-MAINTAINER sparklyballs
+MAINTAINER Jeeva Kailasam
 
 # set version for s6 overlay
-ARG OVERLAY_VERSION="v1.19.1.1"
+ARG OVERLAY_VERSION="v1.20.0.0"
 ARG OVERLAY_ARCH="amd64"
 
 # environment variables
